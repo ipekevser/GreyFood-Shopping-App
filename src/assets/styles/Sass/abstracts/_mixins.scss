@@ -1,0 +1,28 @@
+@mixin typographyConstructor($fontSize, $fontWeight, $letterSpacing, $lineHeight) {
+    @if $letterSpacing  !="normal" {
+      $letterSpacing: #{$letterSpacing};
+    }
+  
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    letter-spacing: $letterSpacing;
+    line-height: #{$lineHeight} ;
+    text-decoration: none;
+  }
+
+  @mixin respond($breakpoint) {
+   
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 60.625em) { @content };    //970px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 70em) { @content };    //1120px
+    }
+    @if $breakpoint == mini-desktop {
+        @media only screen and (max-width: 80em) { @content };     //1280px
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 105em) { @content };    //1680px
+    }
+}

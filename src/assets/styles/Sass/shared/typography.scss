@@ -1,0 +1,58 @@
+﻿@import "../abstracts/colour";
+@import "../abstracts/mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+$fontFamily: "Quicksand", sans-serif;
+
+// Label
+.Label-SemiBold {
+  @include typographyConstructor(1.6rem, 600, normal, 1.6rem);
+}
+.Label-SemiBold-2 {
+  @include typographyConstructor(1.4rem, 600, normal, 1.1rem);
+}
+.Label-SemiBold-3 {
+  @include typographyConstructor(1.4rem, 600, normal, 1.6rem);
+}
+.Label-SemiBold-4 {
+  @include typographyConstructor(1.2rem, 600, normal, 1.2rem);
+}
+.Label-SemiBold-5 {
+  @include typographyConstructor(1.2rem, 600, normal, 1.6rem);
+}
+.Label-SemiBold-6 {
+  @include typographyConstructor(1.2rem, 600, normal, 3rem);
+}
+.Label-SemiBold-Large {
+  @include typographyConstructor(1.8rem, 600, normal, 1.9rem);
+}
+.Label-SemiBold-Large-2 {
+  @include typographyConstructor(1.8rem, 700, normal, 2.4rem);
+}
+.Label-Bold {
+  @include typographyConstructor(1.6rem, 700, normal, 1.8rem);
+}
+.Label-Bold-2 {
+  @include typographyConstructor(1.6rem, 600, normal, 2.4rem);
+}
+.Label-Bold-3 {
+  @include typographyConstructor(1.65rem, 700, normal, 1.6rem);
+}
+.Label-Bold-4 {
+  @include typographyConstructor(2.4rem, 600, normal, 1.77rem);
+}
+
+// HEADING
+.Heading-Bold {
+  @include typographyConstructor(2.95rem, 700, normal, 2.8rem);
+}
+.Heading-Bold-2 {
+  @include typographyConstructor(3rem, 700, normal, 2.8rem);
+}
+.Heading-Bold-3 {
+  @include typographyConstructor(2.4rem, 700, normal, 2.4rem);
+}
+.Heading-Bold-4 {
+  @include typographyConstructor(2rem, 700, normal, 3rem);
+}
+

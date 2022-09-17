@@ -1,0 +1,286 @@
+.comp-categories-01 {
+  margin-bottom: 9.6rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+
+  .c-column-01 {
+    color: $green-color;
+    margin: 5rem 0 4.2rem;
+    text-align: center;
+  }
+
+  .c-column-02 {
+    width: 88.54%;
+    display: flex;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 2rem;
+
+    .c-column-02-A {
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      border-right: 0.2rem solid $neutral-background;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      width: 10.56%;
+      height: 93rem;
+
+      .c-item-01 {
+        width: 100%;
+        height: 13.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .category {
+          width: 6rem;
+          height: 6rem;
+        }
+
+        p {
+          margin-top: 1rem;
+          color: $text-light-color;
+        }
+
+        .active-label {
+          margin-top: 1rem;
+          color: $green-color;
+        }
+
+        .snack {
+          @include snacks("9d9d9c", 6);
+          border-top-left-radius: 2rem;
+        }
+
+        .snack-active {
+          @include snacks("009640", 6);
+          border-top-left-radius: 2rem;
+        }
+
+        .drink {
+          @include drinks("9d9d9c", 6);
+        }
+
+        .drink-active {
+          @include drinks("009640", 6);
+        }
+
+        .wafer {
+          @include wafer("9d9d9c", 6);
+        }
+
+        .wafer-active {
+          @include wafer("009640", 6);
+        }
+
+        .ice-cream {
+          @include ice-cream("9d9d9c", 6);
+        }
+
+        .ice-cream-active {
+          @include ice-cream("009640", 6);
+        }
+
+        .chocolate {
+          @include chocolate("9d9d9c", 6);
+        }
+
+        .chocolate-active {
+          @include chocolate("009640", 6);
+        }
+
+        .coffee {
+          @include coffee("9d9d9c", 6);
+        }
+
+        .coffee-active {
+          @include coffee("009640", 6);
+        }
+
+        .allcategory {
+          @include all-categories("fff", 6);
+          background-color: $green-background;
+        }
+
+        .allcategory-active {
+          @include all-categories("fff", 6);
+          background-color: $green-background;
+        }
+
+        .c-unit-08 {
+          margin-top: 1.9rem;
+          width: 79.5%;
+          border: 1px solid $neutral-background;
+        }
+
+        &:last-child {
+          background-color: $green-background;
+          border-bottom-left-radius: 2rem;
+
+          p {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .c-column-02-B {
+      padding: 3.7rem 4.1rem 3.4rem 7.2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2.4rem 3rem;
+      height: 92rem;
+      overflow: auto;
+      width: 100%;
+
+      .c-item-01 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 42.1rem;
+        background-color: $white;
+        border-radius: 2rem;
+
+        .c-unit-01 {
+          width: 100%;
+          padding: 0 2.4rem;
+
+          .c-unit-01-A {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32.1rem;
+            width: 100%;
+            cursor: pointer;
+
+            img {
+              max-width: 80%;
+              max-height: 50%;
+            }
+          }
+
+          .c-unit-01-B {
+            width: 100%;
+
+            p {
+              text-align: center;
+              color: $text-color;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+
+        .product-tags {
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          img {
+            height: 4.5rem;
+            max-width: 6rem;
+          }
+        }
+
+        .c-unit-02 {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0 2.9rem 0 3.1rem;
+          margin-bottom: 2rem;
+
+          .c-unit-02-A {
+            align-self: flex-end;
+
+            p {
+              color: $green-color;
+            }
+          }
+
+          .c-unit-02-B {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $neutral-background;
+            cursor: pointer;
+            &:hover{
+              background-color: $dark-background;
+            }
+      
+            &:active{
+              background-color: $dark-background;
+            }
+          }
+
+          .c-unit-02-BA {
+            display: flex;
+            width: 10.1rem;
+            height: 3.7rem;
+            box-sizing: border-box;
+            border-radius: 2rem;
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+            font-weight: bold;
+            background-color: $neutral-background;
+
+            button {
+              display:flex;
+              align-items: center;
+              justify-content: center;
+              width: 1.7rem;
+              height: 1.7rem;
+              box-sizing: border-box;
+              border: none;
+              border-radius: 100%;
+              color: $white;
+              cursor: pointer;
+              p{
+                font-size: 1.7rem;
+              }
+            }
+
+            .minus {
+              background-color: $dark-background;
+              &:hover{
+                background-color: $darkest-background;
+              }
+        
+              &:active{
+                background-color: $darkest-background;
+              }
+            }
+
+            .plus {
+              background-color: $green-background;
+              &:hover{
+                background-color: $green-button-dark-hover-color;
+              }
+        
+              &:active{
+                background-color: $green-button-dark-active-color;
+              }
+            }
+
+            span {
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

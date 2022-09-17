@@ -1,0 +1,247 @@
+.comp-header-01 {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 12.4rem;
+  background-color: $neutral-background;
+  
+  .c-header-01 {
+    width:88.54%;
+    margin: 0 auto;
+    
+    .c-column-01 {
+      height: 5.2rem;
+      
+      .c-item-01 {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        
+        .c-unit-01 {
+          display: flex;
+          height: 3rem;
+          margin: auto 1rem;
+          
+          .c-unit-01-AA {
+            color: $dark-background;
+            margin: auto 0;
+          }
+          
+          .c-unit-01-AB {
+            color: $green-color;
+            margin: auto 0;
+            cursor: pointer;
+          }
+        }
+        
+        .c-unit-02 {
+          margin: auto 4rem auto 0;
+          height: 3rem;
+          position: relative;
+          display: flex;
+          align-items: center;
+          
+          .c-unit-02-A {
+            width: 1.4rem;
+            height: 1.3rem;
+            position: absolute;
+            z-index: 1;
+            left: 0.9rem;
+          }
+          
+          .c-unit-02-AA {
+            width: 12rem;
+            height: 3.2rem;
+            color: $white;
+            border-radius: 3rem;
+            border: none;
+            background-color: $green-color;
+            cursor: pointer;
+            &:hover{
+              background-color: $green-button-dark-hover-color;
+            }
+      
+            &:focus{
+              background-color: $green-button-dark-focus-color;
+            }
+      
+            &:active{
+              background-color: $green-button-dark-active-color;
+            }
+          }
+          
+          .c-unit-02-AB {
+            height: 3.2rem;
+            width: 3.2rem;
+            color: $white;
+            border-radius: 3rem;
+            border: none;
+            background-color: $white;
+            position: absolute;
+            z-index: 1;
+            right: 0.02rem;
+          }
+          
+          .c-unit-02-AC {
+            height: 3rem;
+            width: 3rem;
+            color: $white;
+            border-radius: 3rem;
+            border: none;
+            background-color: $green-color;
+            position: absolute;
+            z-index: 2;
+            right: 0.05rem;
+            cursor: pointer;
+            font-size: 1.6rem;
+            &:hover{
+              background-color: $green-button-dark-hover-color;
+            }
+      
+            &:active{
+              background-color: $green-button-dark-active-color;
+            }
+          }
+        }
+        
+        .c-unit-03 {
+          display: flex;
+          margin: auto 0;
+          
+          .c-unit-03-AA {
+            color: $text-color;
+            margin: auto 1.5rem auto 0;
+          }
+          
+          .c-unit-03-AB {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: auto 0.5rem;
+          }
+          
+          .c-unit-03-AC {
+            width: 0.8rem;
+            height: 0.5rem;
+            margin: auto 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    
+    .c-column-02 {
+      display: flex;
+      
+      .c-item-01 {
+        width: 44%;
+        margin-bottom: 2.7rem;
+        display: flex;
+        align-items: center;
+        
+        .c-unit-01 {
+          width: 27.13%;
+          height: 4.4rem;
+          margin-right: 6.28%;
+        }
+        
+        .c-unit-02 {
+          width: 2.54%;
+          height: 1.6rem;
+          margin-right: 0.8%;
+        }
+        
+        .c-unit-03 {
+          height: 1.6rem;
+          margin-right: 2.67%;
+        
+          a {
+            color: $text-color;
+            cursor: pointer;
+          }
+        }
+       
+        .c-unit-04 {
+          width: 23%;
+          min-width: 11.2rem;
+          height: 4.4rem;
+          border-radius: 3rem;
+          border: 2.2px solid $green-color;
+          color: $green-color;
+          cursor: pointer;
+          font-size: 1.6rem;
+          font-weight: bold;
+          letter-spacing:normal;
+
+          &:hover{
+            background-color: $neutral-background;
+          }
+    
+          &:active{
+            background-color: $neutral-background;
+          }
+        }
+      }
+      
+      .c-item-03 {
+        width:32.64%;
+        min-width: 38.7rem;
+        margin-left: auto;
+        position: relative;
+        box-sizing: border-box;
+
+        .c-unit-01 {
+          width: 1.6rem;
+          height: 1.6rem;
+          position: absolute;
+          z-index: 1;
+          left: 2.4rem;
+          top: 1.5rem;
+          cursor: pointer;
+        }
+       
+        .c-unit-02 {
+          width: 100%;
+          height: 4.4rem;
+          border-radius: 3rem;
+          border: 2px solid $light-color;
+          color: $neutral-icon;
+          text-indent: 5.3rem;
+          font-size: 1.2rem;
+          
+        }
+        
+        .c-unit-03 {
+          width: 16rem;
+          height: 4.4rem;
+          border: none;
+          border-radius: 3rem;
+          box-sizing: border-box;
+          background-color: $darkest-background;
+          color: $white;
+          position: absolute;
+          z-index: 1;
+          right: 0;
+          padding-right: 7.4rem;
+          cursor: pointer;
+        }
+        
+        .c-unit-04 {
+          width: 7.6rem;
+          height: 3.6rem;
+          border: none;
+          border-radius: 3rem;
+          background-color: $white;
+          color: $text-color;
+          position: absolute;
+          z-index: 1;
+          right: 0.4rem;
+          top: 0.4rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

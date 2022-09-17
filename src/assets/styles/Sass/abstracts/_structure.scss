@@ -1,0 +1,59 @@
+@import "./_colour.scss";
+@import "./_mixins.scss";
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    @include respond(desktop) { // width < 1680?
+        font-size: 54.687%;
+    }
+
+    @include respond(mini-desktop) { // width < 1280?
+        font-size: 41.67%; 
+    } 
+    @include respond(tab-land) { // width < 1120?
+        font-size: 36.45%; 
+    } 
+    @include respond(tab-port) { // width < 970px?
+        font-size: 31.55%; 
+    }
+}
+
+body {
+    box-sizing: border-box;
+    
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgb(131, 130, 130);
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 5px;
+  }
+}
