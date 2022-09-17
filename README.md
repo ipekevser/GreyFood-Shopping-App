@@ -9,7 +9,10 @@
 - Npm
 
 ### Installation
-First go to the local directory and run below commands
+First clone the repository
+git@github.com:ipekevser/GreyFood-Shopping-App.git
+
+Then go to the local directory and run below commands
  - npm install
  - npm start
 
