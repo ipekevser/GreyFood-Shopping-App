@@ -106,7 +106,9 @@ const BestSeller = () => {
                       >
                         <p>-</p>
                       </button>
-                      <span>{findItemQuantity(bestsellerProducts[i])}</span>
+                      <span className="Label-SemiBold">
+                        {findItemQuantity(bestsellerProducts[i])}
+                      </span>
                       <button
                         className="plus"
                         onClick={() => addToCartHandler(bestsellerProducts[i])}

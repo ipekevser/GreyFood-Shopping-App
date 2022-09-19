@@ -40,7 +40,9 @@ const Categories = () => {
   const filterProductHandler = (e) => {
     setFilterParams(e.target.id);
   };
+
   let filteredProducts = [];
+  
   if (filterParams !== "all") {
     filteredProducts = products.filter(
       (item) => item.category === filterParams
